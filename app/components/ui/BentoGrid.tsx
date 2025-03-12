@@ -2,7 +2,6 @@
 
 import { cn } from "@/lib/utils";
 import { BackgroundGradientAnimation } from "./GradientBg";
-import { GlobeDemo } from "./GridGlobe";
 import animationData from "../../data/confetti.json";
 import Lottie from "react-lottie";
 import MagicButton from "./MagicButton";
@@ -77,6 +76,7 @@ export const BentoGridItem = ({
         backgroundColor:
           "linear-gradient(90deg, rgba(4,7,29,1) 0%, rgba(12,14,35,1) 100%)",
       }}
+      id="about"
     >
       <div className={`${id === 6 && "flex justify-center"} h-full'`}>
         <div className="w-full h-full absolute">
@@ -103,9 +103,9 @@ export const BentoGridItem = ({
           )}
         </div>
         {id === 6 && (
-          <BackgroundGradientAnimation>
-            <div className="absolute z-50 inset-0 flex items-center justify-center text-white font-bold px-4 pointer-events-none text-3xl text-center md:text-4xl lg:text-7xl"></div>
-          </BackgroundGradientAnimation>
+          <BackgroundBeamsWithCollision>
+            <div></div>
+          </BackgroundBeamsWithCollision>
         )}
         <div
           className={cn(
