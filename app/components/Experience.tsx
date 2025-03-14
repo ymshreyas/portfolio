@@ -2,7 +2,7 @@ import React from "react";
 import { Timeline } from "./ui/timeline";
 import { AnimatedTooltip } from "./ui/animated-tooltip";
 
-export function TimelineDemo() {
+export function Experience() {
   const skills1 = [
     {
       id: 1,

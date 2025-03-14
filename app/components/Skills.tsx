@@ -2,7 +2,7 @@
 
 import { InfiniteMovingCards } from "./ui/infinite-moving-cards";
 
-export function InfiniteMovingCardsDemo() {
+export function Skills() {
   return (
     <div className="h-full rounded-md flex flex-col antialiased items-center justify-center relative overflow-hidden">
       <h1 className="heading my-8">

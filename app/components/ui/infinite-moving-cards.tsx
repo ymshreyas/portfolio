@@ -99,7 +99,12 @@ export const InfiniteMovingCards = ({
               <div className="relative z-20 mt-6 flex flex-row items-center">
                 <span className="flex flex-col gap-1">
                   <span className="text-sm leading-[1.6] text-gray-400 font-normal">
-                    <img src={item.imgurl} alt={item.name} width={70} height={70} />
+                    <img
+                      src={item.imgurl}
+                      alt={item.name}
+                      width={70}
+                      height={70}
+                    />
                   </span>
                 </span>
               </div>
