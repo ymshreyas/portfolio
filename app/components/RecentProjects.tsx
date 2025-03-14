@@ -1,7 +1,6 @@
 import React from "react";
 import { projects } from "../data";
 import { PinContainer } from "./ui/3d-pin";
-import { FaLocationArrow } from "react-icons/fa";
 
 const RecentProjects = () => {
   return (
@@ -10,28 +9,25 @@ const RecentProjects = () => {
         A small selection of{" "}
         <span className="text-purple">my recent projects</span>
       </h1>
-      <div className="flex flex-wrap justify-center items-center p-4 gap-x-24 mt-10">
+      <div className="flex flex-wrap justify-center items-center p-4 gap-x-24 md:gap-y-16 mt-10">
         {projects.map((project) => (
           <div
             key={project.id}
             className="lg:min-h-[32.5rem] h-[25rem] flex items-center justify-center sm:w-96 w-[80vw]"
           >
-            <PinContainer title={project.link} href={project.link}>
+            <PinContainer title={project.pin_title} href={project.link}>
               <div className="relative flex items-center justify-center sm:w-96 w-[80vw] overflow-hidden h-[20vh] lg:h-[30vh] mb-10">
-                <div className="relative w-full h-full overflow-hidden lg:rounded-3xl bg-[#13162D]">
-                  <img src="/bg.png" alt="bg-img" />
-                </div>
                 <img
                   src={project.img}
                   alt={project.title}
-                  className="z-10 absolute bottom-0 h-full w-full"
+                  className="absolute bottom-0 object-cover m-4 rounded-xl"
                 />
               </div>
               <h1 className="font-bold lg:text-2xl md:text-xl text-base line-clamp-1">
                 {project.title}
               </h1>
               <p
-                className="lg:text-xl lg:font-normal font-light text-sm line-clamp-2"
+                className="lg:text-xl lg:font-normal font-light text-sm line-clamp-3"
                 style={{ margin: "1vh 0" }}
               >
                 {project.des}
@@ -52,8 +48,7 @@ const RecentProjects = () => {
                   <p className="flex lg:text-sm md:text-xs text-sm text-purple">
                     Check Github Repository
                   </p>
-                  {/* <FaLocationArrow className="ms-3 my-2" color="#CBACF9" /> */}
-                  <img src="/github.png" alt=""  width={15} height={15}/>
+                  <img src="/github.png" alt="" width={15} height={15} />
                 </div>
               </div>
             </PinContainer>

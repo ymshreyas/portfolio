@@ -87,3 +87,22 @@
     background: linear-gradient(90deg, #161a31 0%, #06091f 100%);
   }
 }
+
+@keyframes scroll {
+  0% {
+    transform: translateX(0);
+  }
+  100% {
+    transform: translateX(-50%);
+  }
+}
+
+.scroller {
+  --animation-duration: 40s; /* Default duration */
+  --animation-direction: forwards; /* Default direction */
+}
+
+.animate-scroll {
+  animation: scroll var(--animation-duration) linear infinite;
+  animation-direction: var(--animation-direction);
+}

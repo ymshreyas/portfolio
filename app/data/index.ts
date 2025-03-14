@@ -1,7 +1,7 @@
 export const navItems = [
   { name: "About", link: "#about" },
   { name: "Projects", link: "#projects" },
-  { name: "Testimonials", link: "#testimonials" },
+  { name: "Experience", link: "#experience" },
   { name: "Contact", link: "#contact" },
 ];
 
@@ -10,7 +10,7 @@ export const gridItems = [
     id: 1,
     title: "I prioritize client collaboration, fostering open communication ",
     description: "",
-    className: "lg:col-span-3 md:col-span-6 md:row-span-4 lg:min-h-[60vh]",
+    className: "lg:col-span-3 md:col-span-6 md:row-span-4 lg:min-h-[60vh] z-10",
     imgClassName: "w-full h-full",
     titleClassName: "justify-end",
     img: "/b1.svg",
@@ -18,9 +18,9 @@ export const gridItems = [
   },
   {
     id: 2,
-    title: "I'm very flexible with time zone communications",
+    title: "I'm flexible with time zone communications",
     description: "",
-    className: "lg:col-span-2 md:col-span-3 md:row-span-2",
+    className: "lg:col-span-2 md:col-span-3 md:row-span-2 z-10",
     imgClassName: "",
     titleClassName: "justify-start",
     img: "",
@@ -30,7 +30,7 @@ export const gridItems = [
     id: 3,
     title: "My tech stack",
     description: "I constantly try to improve",
-    className: "lg:col-span-2 md:col-span-3 md:row-span-2",
+    className: "lg:col-span-2 md:col-span-3 md:row-span-2 z-10",
     imgClassName: "",
     titleClassName: "justify-center",
     img: "",
@@ -49,7 +49,7 @@ export const gridItems = [
 
   {
     id: 5,
-    title: "Currently building a JS Animation library",
+    title: "Bridging Innovation with Code in Web Development",
     description: "The Inside Scoop",
     className: "md:col-span-3 md:row-span-2",
     imgClassName: "absolute right-0 bottom-0 md:w-96 w-60",
@@ -59,7 +59,7 @@ export const gridItems = [
   },
   {
     id: 6,
-    title: "Do you want to start a project together?",
+    title: "Download my resume and let's connect!",
     description: "",
     className: "lg:col-span-2 md:col-span-3 md:row-span-1",
     imgClassName: "",
@@ -73,6 +73,7 @@ export const projects = [
   {
     id: 1,
     title: "Code Craft - Online Code Editor",
+    pin_title: "Code Craft",
     des: "Code Craft is a powerful online IDE built with Next.js 15, Convex, and Clerk, offering a seamless, interactive, and customizable coding experience with multi-language support and advanced collaboration features.",
     img: "/code_craft.png",
     iconLists: ["/next.svg", "/tail.svg", "/ts.svg", "/c.svg", "/convex.svg"],
@@ -81,123 +82,52 @@ export const projects = [
   {
     id: 2,
     title: "Connectify - Realtime chat application",
+    pin_title: "Connectify",
     des: "Connectify is a real-time chat application built with the MERN stack and Socket.io, offering instant messaging, a modern responsive UI, and a seamless interactive experience.",
     img: "/chat_app.png",
-    iconLists: ["/mongo.svg", "/express.png", "/re.svg", "/nodejs.svg", "tail.svg"],
-    link: "https://github.com/adrianhajdin/zoom-clone",
+    iconLists: [
+      "/mongo.svg",
+      "/express.png",
+      "/re.svg",
+      "/nodejs.svg",
+      "tail.svg",
+    ],
+    link: "https://github.com/ymshreyas/chat_app.git",
   },
   {
     id: 3,
     title: "Socially",
-    des: "A REAL Software-as-a-Service app with AI features and a payments and credits system using the latest tech stack.",
+    pin_title: "Socially",
+    des: "Socially is a modern social media platform built with Next.js, PostgreSQL, Prisma, and TypeScript, offering secure authentication, dynamic routing, API integration, file uploads, and optimized performance with caching, Server Components, and Server Actions for a seamless user experience.",
     img: "/socially.png",
     iconLists: ["/next.svg", "/tail.svg", "/ts.svg", "/postgres.png", "/c.svg"],
-    link: "https://github.com/adrianhajdin/ai_saas_app",
+    link: "https://github.com/ymshreyas/socially.git",
   },
   {
     id: 4,
     title: "Edu Pro - Student Management System",
+    pin_title: "Edu Pro",
     des: "Edu Pro is a cutting-edge student management portal that streamlines student and faculty interactions by enabling attendance tracking, performance monitoring, anonymous complaints, and real-time notifications, ensuring a seamless and efficient academic experience.",
     img: "/edu_pro.png",
-    iconLists: ["/next.svg", "/tail.svg", "/ts.svg", "/three.svg", "/gsap.svg"],
-    link: "https://github.com/adrianhajdin/iphone",
-  },
-];
-
-export const testimonials = [
-  {
-    quote:
-      "Collaborating with Adrian was an absolute pleasure. His professionalism, promptness, and dedication to delivering exceptional results were evident throughout our project. Adrian's enthusiasm for every facet of development truly stands out. If you're seeking to elevate your website and elevate your brand, Adrian is the ideal partner.",
-    name: "Michael Johnson",
-    title: "Director of AlphaStream Technologies",
-  },
-  {
-    quote:
-      "Collaborating with Adrian was an absolute pleasure. His professionalism, promptness, and dedication to delivering exceptional results were evident throughout our project. Adrian's enthusiasm for every facet of development truly stands out. If you're seeking to elevate your website and elevate your brand, Adrian is the ideal partner.",
-    name: "Michael Johnson",
-    title: "Director of AlphaStream Technologies",
-  },
-  {
-    quote:
-      "Collaborating with Adrian was an absolute pleasure. His professionalism, promptness, and dedication to delivering exceptional results were evident throughout our project. Adrian's enthusiasm for every facet of development truly stands out. If you're seeking to elevate your website and elevate your brand, Adrian is the ideal partner.",
-    name: "Michael Johnson",
-    title: "Director of AlphaStream Technologies",
-  },
-  {
-    quote:
-      "Collaborating with Adrian was an absolute pleasure. His professionalism, promptness, and dedication to delivering exceptional results were evident throughout our project. Adrian's enthusiasm for every facet of development truly stands out. If you're seeking to elevate your website and elevate your brand, Adrian is the ideal partner.",
-    name: "Michael Johnson",
-    title: "Director of AlphaStream Technologies",
-  },
-  {
-    quote:
-      "Collaborating with Adrian was an absolute pleasure. His professionalism, promptness, and dedication to delivering exceptional results were evident throughout our project. Adrian's enthusiasm for every facet of development truly stands out. If you're seeking to elevate your website and elevate your brand, Adrian is the ideal partner.",
-    name: "Michael Johnson",
-    title: "Director of AlphaStream Technologies",
-  },
-];
-
-export const companies = [
-  {
-    id: 1,
-    name: "cloudinary",
-    img: "/cloud.svg",
-    nameImg: "/cloudName.svg",
-  },
-  {
-    id: 2,
-    name: "appwrite",
-    img: "/app.svg",
-    nameImg: "/appName.svg",
-  },
-  {
-    id: 3,
-    name: "HOSTINGER",
-    img: "/host.svg",
-    nameImg: "/hostName.svg",
-  },
-  {
-    id: 4,
-    name: "stream",
-    img: "/s.svg",
-    nameImg: "/streamName.svg",
-  },
-  {
-    id: 5,
-    name: "docker.",
-    img: "/dock.svg",
-    nameImg: "/dockerName.svg",
+    iconLists: ["/django.svg", "/postgres.png", "/bootstrap.png", "/js.png"],
+    link: "https://github.com/ymshreyas/edu_pro.git",
   },
 ];
 
 export const workExperience = [
   {
     id: 1,
-    title: "Frontend Engineer Intern",
-    desc: "Assisted in the development of a web-based platform using React.js, enhancing interactivity.",
+    title: "IoT Intern - Subhanu Technologies",
+    desc: "Designed and developed an IoT-enabled heart rate monitoring system using Raspberry Pi, integrating advanced biometric sensors and IoT communication protocols for seamless data acquisition and transmission. Implemented real-time data collection and visualization by leveraging MongoDB, ensuring efficient storage, retrieval, and analysis of heart rate metrics. The system enhances remote health monitoring by providing secure, scalable, and real-time insights, making it suitable for applications in telemedicine and healthcare analytics.",
     className: "md:col-span-2",
-    thumbnail: "/exp1.svg",
+    thumbnail: "/subhanu.jpeg",
   },
   {
     id: 2,
-    title: "Mobile App Dev - JSM Tech",
-    desc: "Designed and developed mobile app for both iOS & Android platforms using React Native.",
-    className: "md:col-span-2", // change to md:col-span-2
-    thumbnail: "/exp2.svg",
-  },
-  {
-    id: 3,
-    title: "Freelance App Dev Project",
-    desc: "Led the dev of a mobile app for a client, from initial concept to deployment on app stores.",
-    className: "md:col-span-2", // change to md:col-span-2
-    thumbnail: "/exp3.svg",
-  },
-  {
-    id: 4,
-    title: "Lead Frontend Developer",
-    desc: "Developed and maintained user-facing features using modern frontend technologies.",
+    title: "Software Developer Intern - Amiti Software Technologies",
+    desc: "Developed various front-end projects, including a news website, weather application, and eCommerce platform using React.js. Built full-stack applications such as a real-time chat application utilizing the MERN stack with Socket.io for seamless communication and a social media platform powered by Next.js for enhanced performance and scalability. Experienced in designing, developing, and testing APIs using tools like Postman and Thunder Client to ensure functionality, performance, and reliability.",
     className: "md:col-span-2",
-    thumbnail: "/exp4.svg",
+    thumbnail: "amiti.jpeg",
   },
 ];
 
@@ -205,13 +135,16 @@ export const socialMedia = [
   {
     id: 1,
     img: "/git.svg",
+    url: "https://github.com/ymshreyas",
   },
   {
     id: 2,
-    img: "/twit.svg",
+    img: "/insta.svg",
+    url: "https://www.instagram.com/ym.shreyas/",
   },
   {
     id: 3,
     img: "/link.svg",
+    url: "https://www.linkedin.com/in/shreyas-ym-a2a44024a/",
   },
 ];

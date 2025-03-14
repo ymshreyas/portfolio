@@ -28,6 +28,11 @@ export default function RootLayout({
     <html lang="en" suppressHydrationWarning>
       <body
         className={`${geistSans.variable} ${geistMono.variable} antialiased`}
+        style={{
+          background: "rgb(4,7,29)",
+          backgroundColor:
+            "linear-gradient(90deg, rgba(4,7,29,1) 0%, rgba(12,14,35,1) 100%)",
+        }}
       >
         <ThemeProvider
           attribute="class"

@@ -1,11 +1,8 @@
 "use client";
 
 import { cn } from "@/lib/utils";
-import { BackgroundGradientAnimation } from "./GradientBg";
-import animationData from "../../data/confetti.json";
-import Lottie from "react-lottie";
 import MagicButton from "./MagicButton";
-import { IoCopyOutline } from "react-icons/io5";
+import { IoDownloadOutline } from "react-icons/io5";
 import { useState } from "react";
 import { BackgroundBeamsWithCollision } from "./background-beams-with-collision";
 
@@ -47,23 +44,22 @@ export const BentoGridItem = ({
   titleClassName?: string;
   spareimg?: string;
 }) => {
-  const leftLists = ["ReactJS", "Express", "Typescript"];
-  const rightLists = ["VueJS", "NuxtJS", "GraphQL"];
-  const [copied, setCopied] = useState(false);
+  const leftLists = ["Typescript", "ReactJS", "ExpressJS"];
+  const rightLists = ["Django", "NextJS", "SQL"];
+  const [download, setDownload] = useState(false);
 
-  const defaultOptions = {
-    loop: copied,
-    autoplay: copied,
-    animationData: animationData,
-    rendererSettings: {
-      preserveAspectRatio: "xMidYMid slice",
-    },
-  };
-
-  const handleCopy = () => {
-    const text = "ymshreyas@gmail.com";
-    navigator.clipboard.writeText(text);
-    setCopied(true);
+  const handleDownload = () => {
+    const pdfUrl = "./Shreyas_YM.pdf"; // Update with the correct PDF file path
+    const link = document.createElement("a");
+    link.href = pdfUrl;
+    link.download = "Shreyas_YM.pdf"; // Set the downloaded file name
+    document.body.appendChild(link);
+    link.click();
+    document.body.removeChild(link);
+    setDownload(true);
+    setTimeout(() => {
+      setDownload(false);
+    }, 3000);
   };
   return (
     <div
@@ -71,11 +67,6 @@ export const BentoGridItem = ({
         "row-span-1 relative overflow-hidden rounded-3xl border border-white/[0.1] group/bento hover:shadow-xl transition duration-200 shadow-input dark:shadow-none justify-between flex flex-col space-y-4",
         className
       )}
-      style={{
-        background: "rgb(4,7,29)",
-        backgroundColor:
-          "linear-gradient(90deg, rgba(4,7,29,1) 0%, rgba(12,14,35,1) 100%)",
-      }}
       id="about"
     >
       <div className={`${id === 6 && "flex justify-center"} h-full'`}>
@@ -156,24 +147,17 @@ export const BentoGridItem = ({
           )}
           {id === 6 && (
             <div className="mt-5 relative">
-              {/* button border magic from tailwind css buttons  */}
-              {/* add rounded-md h-8 md:h-8, remove rounded-full */}
-              {/* remove focus:ring-2 focus:ring-slate-400 focus:ring-offset-2 focus:ring-offset-slate-50 */}
-              {/* add handleCopy() for the copy the text */}
               <div
                 className={`absolute -bottom-5 right-0 ${
-                  copied ? "block" : "block"
+                  download ? "block" : "block"
                 }`}
-              >
-                {/* <img src="/confetti.gif" alt="confetti" /> */}
-                <Lottie options={defaultOptions} height={200} width={400} />
-              </div>
+              ></div>
 
               <MagicButton
-                title={copied ? "Email is Copied!" : "Copy my email address"}
-                icon={<IoCopyOutline />}
+                title={!download ? "Download Resume" : "Resume Downloaded"}
+                icon={<IoDownloadOutline />}
                 position="left"
-                handleClick={handleCopy}
+                handleClick={handleDownload}
                 otherClasses="!bg-[#161A31]"
               />
             </div>
