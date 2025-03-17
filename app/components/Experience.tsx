@@ -120,7 +120,7 @@ export function Experience() {
   ];
   return (
     <>
-      <h1 className="heading mt-16 -mb-20" id="experience">
+      <h1 className="heading" id="experience">
         A glimpse into{" "}
         <span className="text-purple">my professional journey</span>
       </h1>
