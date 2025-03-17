@@ -1,6 +1,6 @@
 "use client";
 
-import { cn } from "@/lib/utils";
+import { cn } from "../../../lib/utils";
 import MagicButton from "./MagicButton";
 import { IoDownloadOutline } from "react-icons/io5";
 import { useState } from "react";
