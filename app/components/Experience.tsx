@@ -29,7 +29,7 @@ export function Experience() {
     {
       id: 2,
       name: "ExpressJS",
-      image: "/express.png",
+      image: "/express.webp",
     },
     {
       id: 3,
@@ -39,7 +39,7 @@ export function Experience() {
     {
       id: 4,
       name: "NodeJS",
-      image: "/nodejs.svg",
+      image: "/nodejs.webp",
     },
     {
       id: 5,
@@ -56,7 +56,7 @@ export function Experience() {
             IoT intern - Subhanu Technologies.
           </h1>
           <div>
-            <div className="flex flex-col md:flex-row items-center gap-5">
+            <div className="flex flex-col lg:flex-row items-center gap-5">
               <img
                 src="/subhanu.jpeg"
                 alt="startup template"
@@ -91,7 +91,7 @@ export function Experience() {
             Software Developer Intern - Amiti Software Technologies.
           </h1>
           <div>
-            <div className="flex flex-col md:flex-row items-center gap-5">
+            <div className="flex flex-col lg:flex-row items-center gap-5">
               <img
                 src="/amiti.jpeg"
                 alt="startup template"

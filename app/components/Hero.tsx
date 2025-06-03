@@ -1,8 +1,27 @@
 import React from "react";
 import { Spotlight } from "./ui/Spotlight";
 import { TextGenerateEffect } from "./ui/TextGenerateEffect";
+import { TypewriterEffectSmooth } from "./ui/typewriter";
 
 export function Hero() {
+  const words = [
+    {
+      text: "Hi",
+    },
+    {
+      text: "I'm",
+    },
+    {
+      text: "Shreyas YM,",
+    },
+    {
+      text: "a",
+    },
+    {
+      text: "Full stack web developer.",
+      className: "text-purple dark:text-purple",
+    },
+  ];
   return (
     <div className="pb-20 pt-36">
       <div>
@@ -19,9 +38,10 @@ export function Hero() {
             className="text-center text-[40px] md:text-5xl lg:text-5xl"
             words="Bringing Ideas to Life with Scalable Solutions"
           />
-          <p className="text-center md:tracking-wider mb-4 text-sm md:text-lg lg:text-2xl">
+          {/* <p className="text-center md:tracking-wider mb-4 text-sm md:text-lg lg:text-2xl">
             Hi I&apos;m Shreyas YM, a Full Stack Web Developer
-          </p>
+          </p> */}
+          <TypewriterEffectSmooth words={words} />
         </div>
       </div>
     </div>

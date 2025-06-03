@@ -25,7 +25,7 @@ const testimonials = [
   },
   {
     name: "Express",
-    imgurl: "./express.png",
+    imgurl: "./express.webp",
   },
   {
     name: "React",
@@ -33,7 +33,7 @@ const testimonials = [
   },
   {
     name: "Node",
-    imgurl: "./nodejs.svg",
+    imgurl: "./nodejs.webp",
   },
   {
     name: "Next.js",
@@ -50,5 +50,13 @@ const testimonials = [
   {
     name: "Django",
     imgurl: "./django.svg",
+  },
+  {
+    name: "Postman",
+    imgurl: "./postman.png",
+  },
+  {
+    name: "Thunder Client",
+    imgurl: "./thunderClient.png",
   },
 ];
