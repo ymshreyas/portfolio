@@ -138,22 +138,21 @@ export const projects = [
   },
 ];
 
-export const workExperience = [
+export const certifications = [
   {
     id: 1,
-    title: "IoT Intern - Subhanu Technologies",
-    desc: "Designed and developed an IoT-enabled heart rate monitoring system using Raspberry Pi, integrating advanced biometric sensors and IoT communication protocols for seamless data acquisition and transmission. Implemented real-time data collection and visualization by leveraging MongoDB, ensuring efficient storage, retrieval, and analysis of heart rate metrics. The system enhances remote health monitoring by providing secure, scalable, and real-time insights, making it suitable for applications in telemedicine and healthcare analytics.",
-    className: "md:col-span-2",
-    thumbnail: "/subhanu.jpeg",
+    name: "Machine Learning Specialization",
+    issuer: "Stanford Online",
+    img: "/ML.png",
   },
   {
     id: 2,
-    title: "Software Developer Intern - Amiti Software Technologies",
-    desc: "Developed various front-end projects, including a news website, weather application, and eCommerce platform using React.js. Built full-stack applications such as a real-time chat application utilizing the MERN stack with Socket.io for seamless communication and a social media platform powered by Next.js for enhanced performance and scalability. Experienced in designing, developing, and testing APIs using tools like Postman and Thunder Client to ensure functionality, performance, and reliability.",
-    className: "md:col-span-2",
-    thumbnail: "amiti.jpeg",
+    name: "Ethical Hacking",
+    issuer: "NPTEL",
+    img: "/EH.png",
   },
 ];
+
 
 export const socialMedia = [
   {

@@ -6,9 +6,10 @@ import { navItems } from "./data";
 import { Skills } from "./components/Skills";
 import Footer from "./components/Footer";
 import { Experience } from "./components/Experience";
+import Certifications from "./components/Certifications";
 
 export const metadata = {
-  title: "My Portfolio Website",
+  title: "Shreyas Portfolio",
 };
 
 export default function Home() {
@@ -20,6 +21,7 @@ export default function Home() {
       <RecentProjects />
       <Experience />
       <Skills />
+      <Certifications/>
       <Footer />
     </div>
   );
