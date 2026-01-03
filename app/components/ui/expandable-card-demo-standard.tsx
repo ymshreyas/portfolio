@@ -204,7 +204,6 @@ const certifications = [
     description: "Stanford Online · Deeplearning.ai",
     src: "/ML.png",
     ctaText: "View Certificate",
-    // ctaLink: "https://coursera.org/verify/XXXX",
     content: () => (
       <p>
         Covers machine learning concepts, algorithms, and applications. Provides
@@ -218,7 +217,6 @@ const certifications = [
     description: "NPTEL · IIT Khargpur",
     src: "/EH.png",
     ctaText: "View Certificate",
-    // ctaLink: "https://coursera.org/verify/YYYY",
     content: () => (
       <p>
         Covers ethical hacking concepts, tools, and techniques. Provides
@@ -232,7 +230,6 @@ const certifications = [
     description: "NPTEL · IIT Khargpur",
     src: "/CC.png",
     ctaText: "View Certificate",
-    // ctaLink: "https://coursera.org/verify/YYYY",
     content: () => (
       <p>
         Covers cloud computing concepts, services, and deployment models.
@@ -246,7 +243,6 @@ const certifications = [
     description: "Udemy · Pierian Data",
     src: "/PJ.jpg",
     ctaText: "View Certificate",
-    // ctaLink: "https://coursera.org/verify/YYYY",
     content: () => (
       <p>
         Covers full stack web development concepts, tools, and techniques using django framework.
